@@ -1038,15 +1038,15 @@
   )
 
   (symbol (lib_id "Connector:AudioJack2") (at 77.47 77.47 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 01ca1135-471d-4314-866e-30f63858fb82)
-    (property "Reference" "J1" (id 0) (at 72.39 76.8349 0)
+    (property "Reference" "AudioIn1" (id 0) (at 81.28 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "AudioJack" (id 1) (at 72.39 79.3749 0)
-      (effects (font (size 1.27 1.27)) (justify right))
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
-    (property "Footprint" "jme-audio-pinheader-2.54-vertical" (id 2) (at 77.47 77.47 0)
+    (property "Footprint" "jme:jme-audio-pinheader-2.54-vertical" (id 2) (at 77.47 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 77.47 77.47 0)
@@ -1109,7 +1109,7 @@
     (uuid 23f65ee1-2ccd-4068-ae1f-1dc4d7eff59a)
     (property "Reference" "U1" (id 0) (at 144.78 78.74 0))
     (property "Value" "LM386" (id 1) (at 144.78 81.28 0))
-    (property "Footprint" "LM386:DIP08" (id 2) (at 143.51 82.55 0)
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket" (id 2) (at 143.51 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm386.pdf" (id 3) (at 146.05 80.01 0)
@@ -1211,7 +1211,7 @@
     (property "Value" "10K" (id 1) (at 162.56 96.52 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 160.02 102.87 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 160.02 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 160.02 102.87 0)
@@ -1377,7 +1377,7 @@
   (symbol (lib_id "Device:Speaker") (at 195.58 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b396bfdf-cff4-4907-8efa-f00f4a874de6)
-    (property "Reference" "LS1" (id 0) (at 200.66 85.0899 0)
+    (property "Reference" "AudioOut1" (id 0) (at 200.66 85.0899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Speaker" (id 1) (at 200.66 87.6299 0)
@@ -1402,7 +1402,7 @@
     (property "Value" "10K" (id 1) (at 93.98 83.8199 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 96.52 82.55 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 96.52 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 96.52 82.55 0)
@@ -1494,8 +1494,10 @@
   (symbol (lib_id "Connector:Jack-DC") (at 110.49 33.02 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid dc59da4c-267f-4146-a600-f2cc0f4de7fd)
-    (property "Reference" "J2" (id 0) (at 110.49 21.59 0))
-    (property "Value" "Jack-DC" (id 1) (at 110.49 24.13 0))
+    (property "Reference" "DC-9V1" (id 0) (at 110.49 26.67 0))
+    (property "Value" "Jack-DC" (id 1) (at 110.49 24.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (id 2) (at 111.76 34.036 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1549,7 +1551,7 @@
     (property "Value" "10K" (id 1) (at 154.94 118.11 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 157.48 119.38 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 157.48 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 157.48 119.38 0)
@@ -1604,8 +1606,14 @@
     (path "/830b347f-aa92-447b-bfcf-ff6ef0cc4c61"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
+    (path "/01ca1135-471d-4314-866e-30f63858fb82"
+      (reference "AudioIn1") (unit 1) (value "AudioJack") (footprint "jme:jme-audio-pinheader-2.54-vertical")
+    )
+    (path "/b396bfdf-cff4-4907-8efa-f00f4a874de6"
+      (reference "AudioOut1") (unit 1) (value "Speaker") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
     (path "/f748d3a0-8c6d-4ef5-a350-b7da4a86c917"
-      (reference "BassBoost1") (unit 1) (value "10K") (footprint "")
+      (reference "BassBoost1") (unit 1) (value "10K") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/56216c7c-e1fb-437a-9a94-6786f3333271"
       (reference "C1") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal")
@@ -1634,17 +1642,11 @@
     (path "/9fe66b19-7f81-4c57-a65c-7c4feef8cad7"
       (reference "C9") (unit 1) (value "0.033uF") (footprint "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal")
     )
-    (path "/5d3052ef-966e-4509-8d8d-9f9326949027"
-      (reference "Gain1") (unit 1) (value "10K") (footprint "")
-    )
-    (path "/01ca1135-471d-4314-866e-30f63858fb82"
-      (reference "J1") (unit 1) (value "AudioJack") (footprint "jme-audio-pinheader-2.54-vertical")
-    )
     (path "/dc59da4c-267f-4146-a600-f2cc0f4de7fd"
-      (reference "J2") (unit 1) (value "Jack-DC") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "DC-9V1") (unit 1) (value "Jack-DC") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
-    (path "/b396bfdf-cff4-4907-8efa-f00f4a874de6"
-      (reference "LS1") (unit 1) (value "Speaker") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    (path "/5d3052ef-966e-4509-8d8d-9f9326949027"
+      (reference "Gain1") (unit 1) (value "10K") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/f63d6667-db21-4f94-a8c8-484525f1c0e9"
       (reference "R1") (unit 1) (value "10R") (footprint "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal")
@@ -1653,10 +1655,10 @@
       (reference "R2") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal")
     )
     (path "/23f65ee1-2ccd-4068-ae1f-1dc4d7eff59a"
-      (reference "U1") (unit 1) (value "LM386") (footprint "LM386:DIP08")
+      (reference "U1") (unit 1) (value "LM386") (footprint "Package_DIP:DIP-8_W7.62mm_Socket")
     )
     (path "/b6747b31-b318-46a5-b54d-fbc219956e2c"
-      (reference "Volume1") (unit 1) (value "10K") (footprint "")
+      (reference "Volume1") (unit 1) (value "10K") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
   )
 )

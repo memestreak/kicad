@@ -7,12 +7,12 @@
     "appearance_expand_layer_display": false,
     "appearance_expand_net_display": false,
     "appearance_panel_tab": 0,
-    "properties_panel_width": -1,
+    "properties_panel_width": 20,
     "properties_splitter_proportion": 0.5,
-    "right_panel_width": -1,
-    "search_panel_dock_direction": -1,
-    "search_panel_height": -1,
-    "search_panel_width": -1,
+    "right_panel_width": 180,
+    "search_panel_dock_direction": 3,
+    "search_panel_height": 250,
+    "search_panel_width": 360,
     "show_layer_manager": true,
     "show_properties": false,
     "show_search": false
@@ -324,7 +324,10 @@
     "annotate_sort_on_modules": true
   },
   "system": {
-    "file_history": [],
+    "file_history": [
+      "/Users/jme/other_repos/PCB-Friends/Jacks Onboard KiCad/Jacks onboard.kicad_pcb",
+      "/Users/jme/other_repos/thonkiconn_breadboard_adapter_v3/thonkiconn_breadboard_adapter_v3.kicad_pcb"
+    ],
     "first_run_shown": false,
     "last_footprint3d_dir": "",
     "last_footprint_lib_dir": "",
@@ -332,6 +335,36 @@
     "last_metric_units": 1,
     "max_undo_items": 0,
     "units": 1
+  },
+  "tools": {
+    "pns": {
+      "auto_posture": true,
+      "can_violate_drc": false,
+      "corner_mode": 0,
+      "effort": 1,
+      "fix_all_segments": true,
+      "follow_mouse": true,
+      "free_angle_mode": false,
+      "jump_over_obstacles": false,
+      "meta": {
+        "version": 0
+      },
+      "mode": 2,
+      "optimize_dragged_track": false,
+      "remove_loops": true,
+      "shove_iteration_limit": 250,
+      "shove_time_limit": 1000,
+      "shove_vias": true,
+      "smart_pads": true,
+      "smooth_dragged_segments": true,
+      "snap_to_pads": false,
+      "snap_to_tracks": false,
+      "start_diagonal": false,
+      "suggest_finish": false,
+      "via_force_prop_iteration_limit": 40,
+      "walkaround_hug_length_threshold": 1.5,
+      "walkaround_iteration_limit": 40
+    }
   },
   "window": {
     "cursor": {
@@ -379,12 +412,31 @@
     },
     "maximized": false,
     "mru_path": "",
-    "perspective": "",
-    "pos_x": 0,
-    "pos_y": 0,
-    "size_x": 0,
-    "size_y": 0,
-    "zoom_factors": []
+    "perspective": "layout2|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1214;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=5;row=0;pos=0;prop=100000;bestw=814;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=32;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=638;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=675;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Appearance;state=1532;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SelectionFilter;caption=Selection Filter;state=1532;dir=2;layer=4;row=0;pos=1;prop=0;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=PropertiesManager;caption=Properties;state=1534;dir=4;layer=5;row=0;pos=0;prop=100000;bestw=300;besth=-1;minw=240;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=162;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=34|dock_size(1,5,0)=34|dock_size(3,6,0)=32|dock_size(4,3,0)=34|dock_size(2,3,0)=34|dock_size(2,4,0)=180|dock_size(5,0,0)=402|",
+    "pos_x": 113,
+    "pos_y": 238,
+    "size_x": 1512,
+    "size_y": 944,
+    "zoom_factors": [
+      0.13,
+      0.22,
+      0.35,
+      0.6,
+      1.0,
+      1.5,
+      2.2,
+      3.5,
+      5.0,
+      8.0,
+      13.0,
+      20.0,
+      35.0,
+      50.0,
+      80.0,
+      130.0,
+      220.0,
+      300.0
+    ]
   },
   "zones": {
     "net_sort_mode": -1

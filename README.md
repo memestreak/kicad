@@ -4,8 +4,8 @@ This repo contains my Kicad projects, custom libraries, and settings.
 
 ## Libraries
 
-*   Footpripints: `jme.pretty/`.
-*   Symbols: `jme-symbols.kicad_sym/`.
+*   Footprints: `jme.pretty/`.
+*   Symbols: `jme-symbols.kicad_sym`.
 
 ## Projects
 
@@ -23,7 +23,7 @@ E.g.,
 ```
 # On Mac, for Kicad 7.0:
 
-mv ~/Library/Preferences/kicad/7.0 ~/kicad_7.0_preferences_orig
+mv ~/Library/Preferences/kicad/7.0 ~/~/Library/Preferences/kicad/7.0_orig
 ln -s ~/repos/kicad/7.0/preferences ~/Library/Preferences/kicad/7.0
 ```
 
